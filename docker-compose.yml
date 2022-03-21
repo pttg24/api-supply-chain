@@ -1,0 +1,12 @@
+version: '2.1'
+services: 
+  supply-chain-api:
+    image: supply-chain-api
+    ports:
+      - 5000:80
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
